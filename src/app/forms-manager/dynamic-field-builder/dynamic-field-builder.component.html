@@ -1,0 +1,18 @@
+<mat-card>
+  <mat-form-field>
+    <input matInput [(ngModel)]="formItem.label" placeholder="Field label">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select placeholder="Field type" [(ngModel)]="formItem.type">
+      <mat-select-trigger>
+        <span style="vertical-align: center;" *ngIf="formItem.type === 'textinput'"><mat-icon>text_fields</mat-icon> Text input</span>
+        <span style="vertical-align: center;" *ngIf="formItem.type === 'checkbox'"><mat-icon>check_box</mat-icon> Checkbox</span>
+        <span style="vertical-align: center;" *ngIf="formItem.type === 'piechart'"><mat-icon>pie_chart</mat-icon> Pie chart</span>
+      </mat-select-trigger>
+      <mat-option [value]="'textinput'"><mat-icon>text_fields</mat-icon>Text input</mat-option>
+      <mat-option [value]="'checkbox'"><mat-icon>check_box</mat-icon>Checkbox</mat-option>
+      <mat-option [value]="'piechart'"><mat-icon>pie_chart</mat-icon>Pie chart</mat-option>
+    </mat-select>
+  </mat-form-field>
+</mat-card>

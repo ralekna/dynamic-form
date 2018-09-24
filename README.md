@@ -6,7 +6,7 @@ An application for build a a form from given fields and submit it to mock REST A
 
 ## Running
 
-Run `npm i && npm start`
+Run `npm i && npm start`.
 Navigate to `http://localhost:4200/`
 
 ## Development server

@@ -8,7 +8,9 @@ import {FormTemplate} from '../models/form-template';
 })
 export class FormsManagerComponent implements OnInit {
 
-  protected forms: Array<FormTemplate> = [{title: 'New form', formItems: []}];
+  protected forms: Array<FormTemplate> = [
+    {title: 'New form', formItems: [{label: 'Field 1', name: 'textinput0', type: 'textinput', required: false}]}
+  ];
 
   constructor() { }
 

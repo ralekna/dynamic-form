@@ -5,14 +5,15 @@ import {
   MatCardModule,
   MatCheckboxModule,
   MatDividerModule,
-  MatFormFieldModule,
-  MatInputModule,
+  MatFormFieldModule, MatIconModule,
+  MatInputModule, MatSelectModule,
   MatSidenavModule,
   MatTabsModule
 } from '@angular/material';
 import {FormsManagerComponent} from './forms-manager.component';
 import {DynamicFormBuilderComponent} from './dynamic-form-builder/dynamic-form-builder.component';
 import {FormsModule} from '@angular/forms';
+import { DynamicFieldBuilderComponent } from './dynamic-field-builder/dynamic-field-builder.component';
 
 @NgModule({
   imports: [
@@ -25,9 +26,11 @@ import {FormsModule} from '@angular/forms';
     MatInputModule,
     MatDividerModule,
     MatCardModule,
+    MatIconModule,
+    MatSelectModule,
     FormsModule
   ],
-  declarations: [FormsManagerComponent, DynamicFormBuilderComponent],
+  declarations: [FormsManagerComponent, DynamicFormBuilderComponent, DynamicFieldBuilderComponent],
   exports: [FormsManagerComponent]
 })
 export class FormsManagerModule { }

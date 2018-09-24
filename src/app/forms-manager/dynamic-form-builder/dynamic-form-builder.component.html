@@ -4,7 +4,9 @@
   </mat-form-field>
 </mat-card>
 <mat-divider></mat-divider>
+<app-dynamic-field-builder *ngFor="let formItem of formTemplate.formItems" [formItem]="formItem"></app-dynamic-field-builder>
+<mat-divider></mat-divider>
 <mat-card>
-  <h3>Add new field</h3>
+  <button mat-button><mat-icon>add_circle_outline</mat-icon> Add new field</button>
   <form></form>
 </mat-card>
